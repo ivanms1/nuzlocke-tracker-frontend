@@ -1,0 +1,22 @@
+mutation CreateNuzlocke($input: NuzlockeInput!) {
+  createNuzlocke(input: $input) {
+    _id
+    name
+    game {
+      name
+    }
+    pokemons {
+      _id
+      pokemon {
+        _id
+        name
+        sprite
+        image
+      }
+      location
+      nickname
+      status
+      level
+    }
+  }
+}

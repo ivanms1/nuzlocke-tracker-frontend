@@ -1,0 +1,15 @@
+.Register {
+  align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 5rem;
+}
+
+.RegisterForm {
+	margin-bottom: 1rem;
+}
+
+.RegisterForm > h1 {
+	text-align: center;
+}

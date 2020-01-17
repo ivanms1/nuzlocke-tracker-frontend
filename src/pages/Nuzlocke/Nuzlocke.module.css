@@ -1,0 +1,128 @@
+.BackButton {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.Nuzlocke {
+  margin: 5rem 8rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Pokemons {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.Pokemons > div:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.TeamGrid {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  display: grid;
+  width: 21rem;
+  grid-template-columns: 7rem 7rem 7rem;
+  grid-template-rows: 7rem 7rem;
+  grid-gap: 1px;
+}
+
+.TeamGrid.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 14rem;
+}
+
+.TeamPokemon {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.TeamPokemon > img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.TooltipWrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.PartnerImage {
+  width: 100%;
+  height: 100%;
+}
+
+.AddNewPokemon {
+  width: 350px !important;
+}
+
+.AddNewPokemonContainer {
+  padding: 1rem 2rem;
+}
+
+.AddNewPokemonForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.LocationFields {
+  display: flex;
+}
+
+.CustomLocationInput {
+  max-width: 10rem;
+}
+
+.LocationCheckbox {
+  margin: 15px 0 0 0 !important;
+  min-width: 10rem;
+}
+
+.LocationCheckbox > div > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NicknameInput {
+  max-width: 10rem;
+}
+
+.SubmitButton {
+  max-height: 3rem;
+  max-width: 10rem;
+}
+
+.SeenPokemon {
+  display: flex;
+  align-items: center;
+}
+
+.Encounters {
+  padding: 1rem;
+}
+
+.Encounter {
+  display: flex;
+  align-items: center;
+}
+
+.EditPokemonForm {
+  padding: 2rem;
+}
+
+.EditPokemonForm > img {
+  height: 8rem;
+}
