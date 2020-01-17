@@ -25,7 +25,7 @@ const AppProvider = ({ children }: AppWrapperProps) => {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      fetch('http://localhost:4000/refresh-token', {
+      fetch('/refresh-token', {
         method: 'POST',
         credentials: 'include'
       }).then(async res => {
