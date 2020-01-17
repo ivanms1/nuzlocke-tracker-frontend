@@ -48,7 +48,11 @@ const client = new ApolloClient({
       fetchAccessToken: () => {
         return fetch('/refresh-token', {
           method: 'POST',
-          credentials: 'include'
+          credentials: 'include',
+          headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+           }
         });
       },
       handleFetch: token => {

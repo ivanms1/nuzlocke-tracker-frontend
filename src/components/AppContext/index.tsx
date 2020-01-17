@@ -25,9 +25,13 @@ const AppProvider = ({ children }: AppWrapperProps) => {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      fetch('/refresh-token', {
+      fetch('https://nuzlock-tracker-backend.herokuapp.com/refresh-token', {
         method: 'POST',
-        credentials: 'include'
+        credentials: 'include',
+        headers : { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+         }
       }).then(async res => {
         const data = await res.json();
         if (!data.ok) {
