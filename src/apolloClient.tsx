@@ -74,7 +74,7 @@ const client = new ApolloClient({
     }),
     requestLink,
     new HttpLink({
-      uri: '/graphql',
+      uri: 'https://nuzlock-tracker-backend.herokuapp.com/refresh-token/graphql',
       credentials: 'include'
     })
   ]),
