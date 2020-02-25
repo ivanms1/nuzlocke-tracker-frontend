@@ -19,18 +19,23 @@ const MobileNavbar = () => {
     return null;
   }
   return (
-    <Navbar fixedToTop className={classNames('bp3-dark', styles.MobileNavbar)}>
-      <Navbar.Group align='left'>
-        <Navbar.Heading>
-          <Button
-            large
-            className={classNames('bp3-minimal', styles.MenuButton)}
-            onClick={() => setIsMenuOpen(true)}
-            icon='menu'
-            text='Nuzlocke Tracker'
-          />
-        </Navbar.Heading>
-      </Navbar.Group>
+    <React.Fragment>
+      <Navbar
+        fixedToTop
+        className={classNames('bp3-dark', styles.MobileNavbar)}
+      >
+        <Navbar.Group align='left'>
+          <Navbar.Heading>
+            <Button
+              large
+              className={classNames('bp3-minimal', styles.MenuButton)}
+              onClick={() => setIsMenuOpen(true)}
+              icon='menu'
+              text='Nuzlocke Tracker'
+            />
+          </Navbar.Heading>
+        </Navbar.Group>
+      </Navbar>
       <Drawer
         position='left'
         size={Drawer.SIZE_LARGE}
@@ -73,7 +78,7 @@ const MobileNavbar = () => {
           />
         </Menu>
       </Drawer>
-    </Navbar>
+    </React.Fragment>
   );
 };
 
